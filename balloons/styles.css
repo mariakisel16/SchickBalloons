@@ -1,0 +1,84 @@
+header {
+  background-color: #edf7fa;
+  border-radius: 25px;
+  opacity: 0.8;
+  padding: 5% 10%; /* Use percentage for padding */
+  margin: 2% 5%; /* Use percentage for margins */
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  overflow: auto;  
+}
+ 
+.container {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+    
+}
+.text_on_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.911); /* Text color */
+  font-size: 50px; /* Text size */
+  padding-top: 190px; /* Padding around text */
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.plain_text {
+  text-align: center;
+  color:#dd8c82;
+  font-weight: bold;
+  padding-top: 40px;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.grid-main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  padding: 15px;
+}
+.images-cards {
+  max-width: 100%;
+  border-radius: 25px;
+}
+h3, h4 {
+  text-align: center;
+}
+footer{
+  background-color: #faedfae8;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 5px;
+}
+@media (max-width: 915px) {
+  .grid-main-cards {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    margin: 10px auto;
+  }
+  .container {
+    width: 200px;
+    height: 200px;
+  }
+  .text_on_image {
+    font-size: 5vw; /* Responsive text size based on viewport width */
+    padding: 20px; /* Padding around text */
+    font-family: "Poppins", sans-serif;
+    margin: 0; /* Reset margin */
+  }  
+  .plain_text {
+    font-size: 20px;
+  }
+
+}
