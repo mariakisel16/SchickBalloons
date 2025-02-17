@@ -61,6 +61,13 @@ footer{
   padding: 10px;
   margin: 5px;
 }
+.pricing-text {
+  font-size: 50px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+  color: rgb(179, 85, 100);
+  padding-left: 15px;
+}
 @media (max-width: 915px) {
   .grid-main-cards {
     grid-template-columns: 1fr;
